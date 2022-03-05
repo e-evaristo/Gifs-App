@@ -1,0 +1,45 @@
+<nav id="sidebarMenu" #sidebarMenu class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+  <div class="pt-3">
+    <span class="px-2 text-secondary">
+      <i class="bi bi-clock-history px-2"></i>
+      Histórico de pesquisa
+    </span>
+
+
+    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+
+      <li class="nav-item" *ngFor="let item of history">
+        <a class="nav-link text-white-50 shadow-sm" aria-current="page" href="#" (click)="buscar(item)">
+          {{ item | titlecase }}
+        </a>
+      </li>
+
+    </ul>
+    <footer class="fixed-bottom text-white px-2 py-2">
+      <button type="button" class="btn btn-outline-dark text-white" (click)="openPopup()">
+        <i class="bi bi-gear px-2 text-white"></i> API Key
+      </button>
+    </footer>
+  </div>
+  
+</nav>
+
+<div class="modal animate__animated animate__bounceIn" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Giphy.com API KEY</h4>
+      </div>
+      <div class="modal-body">
+        <p>Crie sua conta em <a href="https://developers.giphy.com/" target="_blank">developers.giphy.com</a> depois clique em "dashboard" para gerar sua chave.</p>
+        <p>
+          <input type="text" name="api_key" #api_key class="form-control" placeholder="Insira aqui sua chave">
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="save()">Salvar</button>
+        <button type="button" class="btn btn-secondary" (click)="closePopup()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,18 @@
-# GifsApp
+# Gifs-App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Resultado dos meus primeiros passos com o [Angular](https://angular.io/). 
+Trata-se de um projeto simples para pesquisa de Gifs animados, utilizando o serviço de API da plataforma https://giphy.com/
 
-## Development server
+### Para executar:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Criar uma conta Developer na Giphy.com e gerar uma API KEY;
+2. Clonar este projeto em sua máquina: ```https://github.com/e-evaristo/Gifs-App.git```
+3. Entrar no diretório: ```cd gifs-app```
+4. Instalar as dependências: ```npm install```
+4. Executar `ng serve -o`
 
-## Code scaffolding
+O aplicativo será aberto no seu navegador. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Tela do aplicativo 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Tela Inicial](src/assets/screencapture-gifs-app.png)
